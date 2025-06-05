@@ -1,0 +1,85 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  background: #003366;
+  color: white;
+  padding: 20px;
+}
+.logo {
+  height: 60px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.headline {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.hero {
+  position: relative;
+}
+.hero-bg {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+.form-container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input, form select, form button {
+  padding: 10px;
+  font-size: 14px;
+}
+form button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.services {
+  padding: 30px;
+  background: #f4f4f4;
+  text-align: center;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.icon {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25D366;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+}
