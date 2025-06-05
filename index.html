@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hometown Planner - House Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🏠 Hometown Planner</h1>
+    <p>Explore Unique House Plans</p>
+  </header>
+
+  <section class="grid">
+    <div class="card" onclick="openModal('2BHK')">
+      <img src="ai-2bhk.jpg" alt="2BHK Plan" />
+      <h3>2 BHK Plan</h3>
+      <p>Size: 1200 sq.ft · ₹15 Lacs</p>
+      <button>View Details</button>
+    </div>
+    <div class="card" onclick="openModal('3BHK')">
+      <img src="ai-3bhk.jpg" alt="3BHK Plan" />
+      <h3>3 BHK Plan</h3>
+      <p>Size: 1500 sq.ft · ₹20 Lacs</p>
+      <button>View Details</button>
+    </div>
+    <div class="card" onclick="openModal('Duplex')">
+      <img src="ai-duplex.jpg" alt="Duplex Plan" />
+      <h3>Duplex Plan</h3>
+      <p>Size: 1800 sq.ft · ₹25 Lacs</p>
+      <button>View Details</button>
+    </div>
+    <div class="card" onclick="openModal('Villa')">
+      <img src="ai-villa.jpg" alt="Villa Plan" />
+      <h3>Villa Plan</h3>
+      <p>Size: 2400 sq.ft · ₹35 Lacs</p>
+      <button>View Details</button>
+    </div>
+    <div class="card" onclick="openModal('Compact')">
+      <img src="ai-compact.jpg" alt="Modern Compact" />
+      <h3>Modern Compact</h3>
+      <p>Size: 900 sq.ft · ₹10 Lacs</p>
+      <button>View Details</button>
+    </div>
+    <div class="card" onclick="openModal('Vastu')">
+      <img src="ai-vastu.jpg" alt="Vastu Plan" />
+      <h3>Vastu Compliant</h3>
+      <p>Size: 1300 sq.ft · ₹18 Lacs</p>
+      <button>View Details</button>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle">Plan Details</h2>
+      <p>Size, description, features and a sample floor plan can go here.</p>
+    </div>
+  </div>
+
+  <script>
+    function openModal(planType) {
+      document.getElementById('modal').style.display = 'block';
+      document.getElementById('modalTitle').innerText = planType + " - Full Plan Details";
+    }
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
