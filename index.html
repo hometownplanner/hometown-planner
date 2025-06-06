@@ -5,51 +5,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hometown Planner</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Hometown Planner Logo" class="logo">
-    <h1 class="headline">HMARA SATH APKA VIKAS</h1>
-  </header>
 
-  <section class="hero">
-    <img src="hero-bg.jpg" alt="House Background" class="hero-bg">
-    <div class="form-container">
-      <h2>Enter Your Plot Details</h2>
-      <form>
-        <input type="text" placeholder="Width (in ft)" required>
-        <input type="text" placeholder="Depth (in ft)" required>
-        <input type="text" placeholder="Total Area (sq.ft)" required>
-        <select>
-          <option selected disabled>Floors</option>
-          <option>Ground</option>
-          <option>G+1</option>
-          <option>G+2</option>
-        </select>
-        <select>
-          <option selected disabled>Facing</option>
-          <option>North</option>
-          <option>East</option>
-          <option>West</option>
-          <option>South</option>
-        </select>
-        <button type="submit">Calculate Price</button>
-      </form>
-    </div>
-  </section>
+<header>
+  <nav>
+    <div class="logo"><img src="logo.png" alt="Logo" /></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section class="services">
-    <h2>Our Plans</h2>
-    <div class="icons">
-      <div class="icon">2D Layout Plan</div>
-      <div class="icon">3D Elevation</div>
-      <div class="icon">Structural Drawing</div>
-      <div class="icon">Presentation Plan</div>
-      <div class="icon">More...</div>
-    </div>
-  </section>
+<section id="home" class="hero">
+  <h1>HMARA SATH APKA VIKAS</h1>
+  <p>Build your dream house with expert planning and AI design.</p>
+</section>
 
-  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp" target="_blank">💬 Chat on WhatsApp</a>
+<section class="ai-banner">
+  <h2>Get Your House Plan with AI in Just 30 Seconds!</h2>
+  <p>Fast. Smart. Personalized.</p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>We are a dedicated platform to help you plan and visualize your dream home using AI-powered tools and traditional values.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Custom House Planning</li>
+    <li>3D Elevation Design</li>
+    <li>Structural Drawings</li>
+    <li>Working Drawings</li>
+    <li>Electrical & Plumbing Plans</li>
+    <li>Interior Design Solutions</li>
+    <li>Vastu Consultancy</li>
+    <li>Bill of Quantity (BOQ)</li>
+    <li>Site Supervision & Quality Audit</li>
+    <li>Turnkey Construction Services</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="mailto:hometownpalnner@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Hometown Planner. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

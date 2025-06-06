@@ -1,85 +1,71 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
+  background-color: #fffaf0;
+  color: #333;
 }
 header {
-  text-align: center;
-  background: #003366;
+  background-color: #8b4513;
   color: white;
-  padding: 20px;
+  padding: 10px 0;
 }
-.logo {
-  height: 60px;
-  display: block;
-  margin: 0 auto 10px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
-.headline {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 0;
+.logo img {
+  height: 50px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
 }
 .hero {
-  position: relative;
+  background-color: #f5deb3;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.hero-bg {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-  display: block;
-}
-.form-container {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  background: rgba(255,255,255,0.9);
+.ai-banner {
+  background: #d2b48c;
+  text-align: center;
   padding: 20px;
-  border-radius: 8px;
-  max-width: 300px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+section {
+  padding: 30px 20px;
 }
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-form input, form select, form button {
+input, textarea {
   padding: 10px;
-  font-size: 14px;
+  width: 100%;
+  max-width: 500px;
 }
-form button {
-  background: #0066cc;
+button {
+  padding: 10px;
+  background-color: #8b4513;
   color: white;
   border: none;
   cursor: pointer;
 }
-.services {
-  padding: 30px;
-  background: #f4f4f4;
+footer {
+  background-color: #eee;
   text-align: center;
-}
-.icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-.icon {
-  background: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.whatsapp {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background: #25D366;
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: bold;
+  padding: 10px;
 }
